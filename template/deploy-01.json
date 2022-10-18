@@ -27,18 +27,6 @@
     },
     "DeploymentID": {
       "type": "string"
-    },
-    "SPDisplayName": {
-      "type": "string"
-    },
-    "SPApplicationID": {
-      "type": "string"
-    },
-    "SPSecretKey": {
-      "type": "string"
-    },
-    "SPObjectID": {
-      "type": "string"
     }
   },
   "variables": {
