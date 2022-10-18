@@ -148,7 +148,6 @@ Import-Module -Name Az
 Import-Module -Name Az.Search
 Import-Module AzureAD
 Import-Module -Name AzTable
-InstallEdgeChromium
 
 #Create Cred File
 Function CreateCredFile($AzureUserName, $AzurePassword, $AzureTenantID, $AzureSubscriptionID, $DeploymentID, $adminPassword)
