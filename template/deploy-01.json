@@ -137,7 +137,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "https://raw.githubusercontent.com/CloudLabsAI-Azure/Solution-Accelerators/main/Smart-Spaces-Sustainability/scripts/psscript.ps1"
+            "https://raw.githubusercontent.com/kumud-sharma/newinsurance/main/script/psscript.ps1"
           ]
         },
         "protectedSettings": {
