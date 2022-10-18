@@ -154,8 +154,8 @@ InstallEdgeChromium
 Function CreateCredFile($AzureUserName, $AzurePassword, $AzureTenantID, $AzureSubscriptionID, $DeploymentID, $adminPassword)
 {
     $WebClient = New-Object System.Net.WebClient
-    $WebClient.DownloadFile("https://raw.githubusercontent.com/CloudLabsAI-Azure/Solution-Accelerators/main/Smart-Spaces-Sustainability/scripts/AzureCreds.txt","C:\Packages\AzureCreds.txt")
-    $WebClient.DownloadFile("https://raw.githubusercontent.com/CloudLabsAI-Azure/Solution-Accelerators/main/Smart-Spaces-Sustainability/scripts/AzureCreds.ps1","C:\Packages\AzureCreds.ps1")
+    $WebClient.DownloadFile("https://raw.githubusercontent.com/kumud-sharma/newinsurance/main/script/AzureCreds.txt","C:\Packages\AzureCreds.txt")
+    $WebClient.DownloadFile("https://raw.githubusercontent.com/kumud-sharma/newinsurance/main/script/AzureCreds.ps1","C:\Packages\AzureCreds.ps1")
     
     New-Item -ItemType directory -Path C:\LabFiles -force
     
@@ -204,4 +204,4 @@ $shell.Namespace($destination).copyhere($item)
 }
 }
 Expand-ZIPFile -File "C:\LabFiles\AutomationInsuranceClaim.zip" -Destination "C:\Users\Public\Desktop"
-Rename-Item C:\Users\Public\Desktop\AutomationInsuranceclaim-main C:\Users\Public\Desktop\AutomationInsuranceCl
+Rename-Item C:\Users\Public\Desktop\AutomationInsuranceclaim-main C:\Users\Public\Desktop\AutomationInsuranceClam
