@@ -104,6 +104,7 @@ Function InstallEdgeChromium
     $argA = """https://portal.azure.com"""
     $Shortcut.Arguments = $argA 
     $Shortcut.Save()
+}
 
     #Disable Welcome page of Microsoft Edge:
     Set-Location hklm:
@@ -128,13 +129,12 @@ InstallChocolatey
 DisableServerMgrNetworkPopup
 CreateLabFilesDirectory
 DisableWindowsFirewall
+InstallAzCLI
 InstallEdgeChromium
 }
 # Run declared functions from psscript.ps1
 WindowsServerCommon
-InstallChocolatey
 InstallAzPowerShellModule
-InstallAzCLI
 Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 Set-PSRepository -Name "PSGallery" -Installationpolicy Trusted
 Install-Module -Name Az -AllowClobber -Scope AllUsers -Force
@@ -142,7 +142,6 @@ Install-Module -Name Az.Search -AllowClobber -Scope AllUsers
 Install-Module -Name Az.BotService -Force
 Install-Module AzureAD -Force
 Install-Module -Name AzTable -Force
-InstallAzCLI
 Import-Module Az
 Import-Module -Name Az
 Import-Module -Name Az.Search
