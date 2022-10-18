@@ -193,6 +193,7 @@ New-Item -ItemType directory -Path C:\LabFiles
 $WebClient = New-Object System.Net.WebClient
 $WebClient.DownloadFile("https://github.com/kumud-sharma/AutomationInsuranceClaim/archive/refs/heads/main.zip"," C:\LabFiles\AutomationInsuranceClaim.zip")
 #unziping folder
+#unziping folder
 function Expand-ZIPFile($file, $destination)
 {
 $shell = new-object -com shell.application
@@ -202,5 +203,5 @@ foreach($item in $zip.items())
 $shell.Namespace($destination).copyhere($item)
 }
 }
-Expand-ZIPFile -File "C:\LabFiles\AutomationInsuranceClaim.zip" -Destination "C:\Users\Public\Desktop"
-Rename-Item C:\Users\Public\Desktop\AutomationInsuranceclaim-main C:\Users\Public\Desktop\AutomationInsuranceClam
+Expand-ZIPFile -File "C:\LabFiles\AutomationInsuranceClaim-main" -Destination "C:\LabFiles\"
+
