@@ -104,7 +104,6 @@ Function InstallEdgeChromium
     $argA = """https://portal.azure.com"""
     $Shortcut.Arguments = $argA 
     $Shortcut.Save()
-}
 
     #Disable Welcome page of Microsoft Edge:
     Set-Location hklm:
